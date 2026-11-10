@@ -1,0 +1,26 @@
+# Virtual environment (can be recreated from requirements.txt)
+.venv/
+
+# Datasets (downloaded separately for each language)
+data/
+
+# Downloaded archive files
+*.zip
+*.tar
+*.tgz
+
+# Saved models (large files, recreated by training)
+checkpoints/
+
+# Training logs and generated outputs
+outputs/
+
+# Python's automatic cache files
+__pycache__/
+*.pyc
+
+# Jupyter notebook autosaves
+.ipynb_checkpoints/
+
+# VS Code personal settings
+.vscode/
