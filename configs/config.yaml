@@ -1,0 +1,22 @@
+# ------------------------------------------------------------
+# General settings
+# ------------------------------------------------------------
+seed: 42
+
+# ------------------------------------------------------------
+# Data settings
+# ------------------------------------------------------------
+data:
+  manifest_path: data/manifest.csv   # where the combined table is saved
+  splits: [train, val, test]         # the three splits every dataset has
+
+  languages:
+    hindi:
+      format: iiit_hw_dev            # label lines: "path word"
+      folder: data/hindi
+    bengali:
+      format: iiit_indic             # label lines: "path, vocab_id"
+      folder: data/bengali
+    tamil:
+      format: iiit_indic
+      folder: data/tamil
