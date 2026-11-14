@@ -20,3 +20,12 @@ data:
     tamil:
       format: iiit_indic
       folder: data/tamil
+
+# ------------------------------------------------------------
+# Preprocessing settings
+# ------------------------------------------------------------
+preprocess:
+  height: 64                                       # every image is resized to this height
+  output_folder: data/processed                    # where processed images are saved
+  processed_manifest_path: data/manifest_processed.csv
+  num_workers: 12                                  # CPU cores to use at once
