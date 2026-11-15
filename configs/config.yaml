@@ -29,3 +29,11 @@ preprocess:
   output_folder: data/processed                    # where processed images are saved
   processed_manifest_path: data/manifest_processed.csv
   num_workers: 12                                  # CPU cores to use at once
+
+# ------------------------------------------------------------
+# Script classifier 
+# ------------------------------------------------------------
+script_classifier:
+  window_width: 128      # width of the window the model sees
+  batch_size: 128        # images per batch
+  num_workers: 4         # DataLoader helper processes
