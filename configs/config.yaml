@@ -36,6 +36,10 @@ preprocess:
 script_classifier:
   window_width: 128      # width of the window the model sees
   batch_size: 128        # images per batch
-  num_workers: 4         # DataLoader helper processes
+  num_workers: 8         # DataLoader helper processes
   channels: [32, 64, 128, 256]   # filters in each of the four Conv blocks
   dropout: 0.3                   # fraction of values switched off during training
+  epochs: 10                                     # full passes through the training data
+  learning_rate: 0.001                           # starting step size (lowered by the schedule)
+  checkpoint_path: checkpoints/script_classifier.pt
+  log_dir: outputs/runs/script_classifier        # where TensorBoard logs are saved
