@@ -51,4 +51,10 @@ script_classifier:
 recognizer:
   language: bengali                              # which script to train on
   charset_path: checkpoints/charset_bengali.json # where the character set is saved
-  
+  batch_size: 64                                 # words per batch
+  num_workers: 8                                 # DataLoader helper processes
+  width_reduction: 4                             # how much the CRNN shrinks the width
+  augment:
+    rotation: 2              # maximum rotation, in degrees
+    shear: 10                # maximum slant, in degrees
+    width_scale: [0.9, 1.1]  # random width stretch: 90% to 110%
