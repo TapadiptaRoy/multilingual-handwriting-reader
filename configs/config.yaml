@@ -43,3 +43,12 @@ script_classifier:
   learning_rate: 0.001                           # starting step size (lowered by the schedule)
   checkpoint_path: checkpoints/script_classifier.pt
   log_dir: outputs/runs/script_classifier        # where TensorBoard logs are saved
+
+
+# ------------------------------------------------------------
+# Handwriting recognizer (Phase 3)
+# ------------------------------------------------------------
+recognizer:
+  language: bengali                              # which script to train on
+  charset_path: checkpoints/charset_bengali.json # where the character set is saved
+  
